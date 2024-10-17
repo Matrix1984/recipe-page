@@ -231,9 +231,6 @@
       border-bottom: 0px var(--stone-100) groove;
     }
 
-
-
-
     @media all and (min-width:375px) {
       .container {
         width: 90%;
@@ -253,27 +250,32 @@
 
       .header-img {
         border-radius: 24px 24px 0px 0px;
+        padding: var(--space-500); 
+        border-radius: 15px;
+        padding-bottom: 0px;
+        margin: auto;
       }
 
       img {
-        border-radius: 24px 24px 0px 0px;
+        border-radius: 15px;
       }
     }
 
     @media all and (min-width:1440px) {
 
       .container {
-        width: 60%; 
+        width: 60%;
       }
+
       h1.young-serif-regular-large {
         text-shadow: 3px 2px 2px var(--stone-900);
-      } 
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
+  <main class="container">
     <div class="header-img">
       <img src="assets/images/image-omelette.jpeg" />
     </div>
@@ -287,7 +289,7 @@
         to perfection, optionally filled with your choice of cheese, vegetables, or meats.
       </div>
 
-      <div class="prep-details">
+      <section class="prep-details">
 
         <h3 class="outfit-semi-bold">Preparation time</h3>
 
@@ -297,11 +299,10 @@
           <li class="outfit-regular"><span>Cooking:</span> 5 minutes</li>
         </ul>
 
-      </div>
+      </section>
 
-      <div class="ingredients">
+      <section class="ingredients">
         <h2 class="young-serif-regular-preset-3">Ingredients</h2>
-
         <ul>
           <li class="outfit-regular">2-3 large eggs</li>
           <li class="outfit-regular">Salt, to taste</li>
@@ -309,12 +310,11 @@
           <li class="outfit-regular">1 tablespoon of butter or oil</li>
           <li class="outfit-regular">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
         </ul>
-
-      </div>
+      </section>
 
       <div class="divider"></div>
 
-      <div class="instructions">
+      <section class="instructions">
 
         <h2 class="young-serif-regular-preset-3">Instructions</h2>
 
@@ -343,11 +343,11 @@
               fillings. Let it cook for another minute, then slide it onto a plate.</li>
           <li class="outfit-regular"><span>Enjoy:</span><span>Serve hot, with additional salt and pepper if needed.</li>
         </ul>
-      </div>
+      </section>
 
       <div class="divider"></div>
 
-      <div class="nutrition-values">
+      <section class="nutrition-values">
         <h2 class="young-serif-regular-preset-3">Nutrition</h2>
 
         <div class="recipe-description outfit-regular">
@@ -375,9 +375,9 @@
             <p>22g</p>
           </div>
         </div>
-      </div>
     </div>
-  </div>
+    </section>
+  </main>
 </body>
 
 </html>
