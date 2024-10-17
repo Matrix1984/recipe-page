@@ -159,32 +159,37 @@
     }
 
     .instructions {
+
       color: var(--stone-600);
     }
 
-    .instructions>ul {
-      list-style: decimal;
+    .instruction {
+      display: flex;
+      gap: var(--space-200);
     }
 
-    .instructions>ul>li {
+    .instructions>p {
       padding-bottom: var(--space-100);
       color: var(--stone-600);
       margin: 0px 0px;
     }
 
 
-    .instructions>ul>li {
+    .instructions>p {
       font-weight: 600;
     }
 
-    .instructions>ul>li>span:first-child {
+    .instructions__number {
       font-weight: 600;
-      margin-right: 3px;
+      margin-right: 3px; 
+    
     }
 
-    .instructions>ul>li>span:last-child {
-      font-weight: 400;
+    .instructions__instruction {
+      font-weight: 600;
     }
+
+    .instructions__instruction__details {}
 
     .nutrition-values {}
 
@@ -210,14 +215,12 @@
     }
 
     .intake-details>div>p:first-child {
-
+      min-width: 10em;
       padding-left: var(--space-400);
     }
 
     .intake-details>div>p:last-child {
       font-weight: 600;
-      margin-right: var(--space-400);
-      margin-left: auto;
 
     }
 
@@ -250,7 +253,7 @@
 
       .header-img {
         border-radius: 24px 24px 0px 0px;
-        padding: var(--space-500); 
+        padding: var(--space-500);
         border-radius: 15px;
         padding-bottom: 0px;
         margin: auto;
@@ -258,6 +261,10 @@
 
       img {
         border-radius: 15px;
+      }
+
+      .intake-details>div>p:first-child {
+        min-width: 24em;
       }
     }
 
@@ -319,30 +326,91 @@
         <h2 class="young-serif-regular-preset-3">Instructions</h2>
 
 
-        <ul>
-          <li class="outfit-regular"><span>Beat the eggs:</span> <span>In a bowl, beat the eggs with a pinch of salt and
-              pepper
-              until they are well mixed.
-              You can add a tablespoon of water or milk for a fluffier texture.</li>
-          <li class="outfit-regular"><span>Heat the pan:</span> <span>Place a non-stick frying pan over medium heat and
-              add butter or
-              oil.</span></li>
-          <li class="outfit-regular"><span>Cook the omelette:</span> <span>Once the butter is melted and bubbling, pour
-              in
-              the eggs.
-              Tilt the pan to ensure
-              the eggs evenly coat the surface.</span></li>
-          <li class="outfit-regular"><span>Add fillings (optional):</span> <span> When the eggs begin to set at the
-              edges
-              but are still
-              slightly runny in the
-              middle, sprinkle your chosen fillings over one half of the omelette.</span></li>
-          <li class="outfit-regular"><span>Fold and serve:</span><span>As the omelette continues to cook, carefully lift
-              one
-              edge and fold it over the
-              fillings. Let it cook for another minute, then slide it onto a plate.</li>
-          <li class="outfit-regular"><span>Enjoy:</span><span>Serve hot, with additional salt and pepper if needed.</li>
-        </ul>
+        <div>
+
+          <div class="instruction">
+            <p class="outfit-regular">
+              <span class="instructions__number">1.</span>
+            </p>
+
+            <p class="outfit-regular">
+              <span class="instructions__instruction">Beat the eggs:</span> 
+              <span>In a bowl, beat the eggs with a
+                pinch of salt and
+                pepper
+                until they are well mixed.
+                You can add a tablespoon of water or milk for a fluffier texture.
+            </p>
+          </div>
+
+          <div class="instruction">
+            <p class="outfit-regular">
+              <span class="instructions__number">2.</span>
+            </p>
+            <p class="outfit-regular">
+              <span class="instructions__instruction">Heat the pan:</span> <span
+                class="instructions__instruction__details">Place a non-stick frying pan over medium heat and
+                add butter or
+                oil.</span>
+            </p>
+          </div>
+
+          <div class="instruction">
+            <p class="outfit-regular">
+              <span class="instructions__number">3.</span>
+            </p>
+            <p class="outfit-regular">
+              <span class="instructions__instruction">Cook the omelette:</span> <span
+                class="instructions__instruction__details">Once the butter is melted and bubbling, pour
+                in
+                the eggs.
+                Tilt the pan to ensure
+                the eggs evenly coat the surface.</span>
+            </p>
+          </div>
+
+          <div class="instruction">
+            <p class="outfit-regular">
+              <span class="instructions__number">4.</span>
+            </p>
+            <p class="outfit-regular">
+              <span class="instructions__instruction">Add fillings (optional):</span> <span
+                class="instructions__instruction__details"> When the eggs begin to set at the
+                edges
+                but are still
+                slightly runny in the
+                middle, sprinkle your chosen fillings over one half of the omelette.</span>
+            </p>
+          </div>
+
+          <div class="instruction">
+            <p class="outfit-regular">
+              <span class="instructions__number">5.</span>
+            </p>
+            <p class="outfit-regular">
+              <span class="instructions__instruction">Fold and serve:</span><span
+                class="instructions__instruction__details">As the omelette continues to cook, carefully lift
+                one
+                edge and fold it over the
+                fillings. Let it cook for another minute, then slide it onto a plate.
+            </p>
+
+          </div>
+
+
+          <div class="instruction">
+            <p class="outfit-regular">
+              <span class="instructions__number">6.</span>
+             </p>
+
+            <p class="outfit-regular">
+              <span class="instructions__instruction">Enjoy:</span><span
+                class="instructions__instruction__details">Serve
+                hot,
+                with additional salt and pepper if needed.
+            </p>
+          </div>
+        </div>
       </section>
 
       <div class="divider"></div>
